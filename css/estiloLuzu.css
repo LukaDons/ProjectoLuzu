@@ -1,0 +1,155 @@
+* {
+	font-family: Georgia;
+}
+
+a {
+	color: #000000;
+}
+
+body {
+	width: 100vw;
+	
+}
+
+#bodyIndex {
+	height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 3fr 1fr; 
+    grid-template-areas: 
+    "headerIndex headerIndex"
+    "mainIndex mainIndex "
+    "footerIndex footerIndex";
+}
+
+#headerIndex {
+	grid-area: headerIndex;
+}
+
+#mainIndex {
+	grid-area: mainIndex;
+	display: grid;
+}
+
+#footerIndex {
+	grid-area: footerIndex;
+	display: grid;
+}
+
+.contact-fondovich {
+	background-image: url("../assets/fondovich.jpg");
+	width: 97vw;
+	
+}
+
+.contact-fondo {
+	background-image: url("http://luzutv.com.ar/wp-content/uploads/2021/07/DSC08814-scaled.jpg") ;
+	width: 100vw;
+	height: 700px;
+	align-self: center;
+	background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
+#headerProgramaciones {
+	background-color: #000000;
+	background-image: url(http://luzutv.com.ar/wp-content/uploads/2021/07/LUZU-BLANCO-Y-NEGRO.jpg);
+	width: 100vw;
+}
+
+#Comunic {
+display: flex;
+align-content: flex-start;
+justify-content: flex-end;
+flex-direction: column;
+opacity: 0.5;
+}
+
+footer {
+	background-color: #000000;
+}
+
+#id-what {
+	background-color: grey;
+}
+
+
+.programaciones {
+	background-color: #e4e4e4;
+}
+
+
+#id-cabezas {
+	width: 98vw;
+}
+
+#Cronograma {
+	padding: 10px;
+	color: #000000;
+	margin: 10px;
+	
+}
+
+.iconos {
+	font-size: 20px;
+	margin: 18px;
+	align-self: center;
+}
+
+.links-form {
+	width: 4px;
+	height: auto;
+	font-size: 25px;
+	margin: 18px;
+	background-position: top right;
+	align-self: center;
+	
+}
+
+
+
+.ndn b:hover {
+	color: red;
+}
+
+.en b:hover {
+	color: skyblue;
+
+}
+
+.tdt b:hover {
+	color: lightyellow;
+
+}
+
+.aqn b:hover {
+	color: seagreen;
+
+}
+
+#sectionUnoNovedades {
+background-image: url(data:image/png;base64,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);
+
+}
+
+
+
+.fond {
+	background: #292c2c;
+	min-height: var(--altura-min);
+	padding: 8rem 1rem;
+	animation: movimiento 15s infinite linear alternate;
+	background-image: url(../img/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg);
+	background-size: 112%;
+	animation: movimiento 9s infinite ease-out alternate;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	justify-content: center;
+}
